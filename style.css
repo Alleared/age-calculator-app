@@ -1,0 +1,233 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap');
+
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* -------- COLORS ----------- */
+  /* PRIMARY */
+  --PURPLE: hsl(259, 100%, 65%);
+  --LIGHT-RED: hsl(0, 100%, 67%);
+
+  /* NEUTRAL */
+  --WHITE: hsl(0, 0%, 100%);
+  --OFF-WHITE: hsl(0, 0%, 94%);
+  --LIGHT-GREY: hsl(0, 0%, 86%);
+  --SMOKEY-GREY: hsl(0, 1%, 44%);
+  --OFF-BLACK: hsl(0, 0%, 8%);
+
+}
+
+body {
+  font: 32px 'Poppins', sans-serif;
+  background-color: var(--LIGHT-GREY);
+}
+
+
+/* HEADER */
+header {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang-div img {
+  width: 100px;
+}
+
+/* SWITCH BUTTON STYLES */
+.label-switch {
+  background-color: var(--SMOKEY-GREY);
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.input-switch {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+}
+
+.slide::before {
+  background-color: var(--LIGHT-GREY);
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+  transition: .2s;
+}
+
+.input-switch:checked + .slide::before {
+  transform: translateX(-30px);
+}
+
+#portuguese {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+article {
+  background-color: var(--WHITE);
+  padding: 2rem;
+  border-radius: 10px 10px 100px 10px;
+  margin: 2rem;
+  max-width: 700px;
+}
+
+
+.input-date-container {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 3rem;
+  
+  
+}
+.input-date-div {
+  width: 25%;
+}
+
+/* INPUT LABEL AND INPUT STYLES */
+.label-input {
+  font-size: .7rem;
+  font-weight: 800;
+  color: var(--SMOKEY-GREY);
+  letter-spacing: .2rem;;
+}
+.input {
+  width: 90%;
+  padding: .5rem;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid var(--LIGHT-GREY);
+  border-radius: 8px;
+  font: 800 1.5rem 'Poppins', sans-serif;
+  transition: border .3s;
+}
+
+.input-date-container input::placeholder {
+  font-weight: 800;
+}
+
+/* INCORRECT DATE ERROR CLASS */
+
+.label-error {
+  color: var(--LIGHT-RED);
+}
+
+.error-message {
+  font-size: .9rem;
+  margin: .5rem 0 0;
+  color: var(--LIGHT-RED);
+}
+
+.input-error {
+  border-color: var(--LIGHT-RED);
+}
+
+/* SUBMIT CONTAINER AND BUTTONS STYLES */
+.submit-container {
+  position: absolute;
+  top: -2.2rem;
+  right: 0;
+  
+}
+.submit-button {
+  background-color: var(--PURPLE);
+  border-radius: 50%;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+.arrow-icon {
+  width: 30px;
+
+}
+
+/* DATE RESULT STYLES */
+.date-result-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid var(--LIGHT-GREY);
+  padding: 1rem 0;
+  position: relative;
+
+}
+
+.date-result-div {
+  font: 800 4rem 'Poppins', sans-serif;
+}
+
+.date-result-div span {
+  color: var(--PURPLE);
+}
+
+
+/* -------- HOVER STYLES --------- */
+
+
+.submit-button:hover, .submit-button:focus {
+  background-color: var(--OFF-BLACK);
+}
+
+.input:hover, .input:focus {
+  border: 1px solid var(--PURPLE);
+}
+
+
+
+@media (max-width: 800px) {
+  main {
+    margin: 3rem auto;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .input-date-container input, .input-date-div {
+    width: 100%;
+  }
+
+  .submit-container {
+    right: 45%;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+  }
+
+  .date-result-container {
+    margin: 5rem 0 0 0;
+    padding: 3rem 0 0 0
+  }
+
+}

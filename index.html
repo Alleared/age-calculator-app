@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alleared">
+  <meta name="description" content="This is a FrontendMentor Javascript junior challenge coded by Alleared">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Age calculator app</title>
+</head>
+
+<body>
+
+
+  <main>
+
+    <article>
+      <div class="input-date-container">
+        <div class="input-date-div">
+          <div>
+            <label for="day-input" class="label-input js-day-label">DAY</label>
+          </div>
+          <div>
+            <input type="text" id="day-input" placeholder="DD" class="input js-day-input">
+            <p class="error-message js-day-error-message"></p>
+          </div>
+        </div>
+        <div class="input-date-div">
+          <div>
+            <label for="month-input" class="label-input js-month-label">MONTH</label>
+          </div>
+          <div>
+            <input type="text" id="month-input" placeholder="MM" class="input js-month-input">
+            <p class="error-message js-month-error-message"></p>
+          </div>
+        </div>
+        <div class="input-date-div">
+          <div>
+            <label for="year-input" class="label-input js-year-label">YEAR</label>
+          </div>
+          <div>
+            <input type="text" id="year-input" placeholder="YYYY" class="input js-year-input">
+            <p class="error-message js-year-error-message"></p>
+          </div>
+        </div>
+      </div>
+      <div class="date-result-container">
+        <div class="submit-container">
+          <button class="submit-button js-submit-button" onclick="finalResult()">
+            <img class="arrow-icon" src="assets/images/icon-arrow.svg" alt="Arrow icon">
+          </button>
+        </div>
+        <div class="date-result-div">
+          <div>
+            <p class="js-result-year"><span class="js-fResult-year">&dash;&dash;</span> years</p>
+          </div>
+          <div>
+            <p class="js-result-month"><span class="js-fResult-month">&dash;&dash;</span> months</p>
+          </div>
+          <div>
+            <p class="js-result-day"><span class="js-fResult-day">&dash;&dash;</span> days</p>
+          </div>
+        </div>
+      </div>
+    </article> 
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Alleared</a>.
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

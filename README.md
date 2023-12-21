@@ -1,0 +1,1 @@
+This is a Frontend Mentor JavaScript Challenge. I really struggled with this one. Maybe it's because it evolved math and I suck at math. But I manage to do it at the end thanks to some kind people who helped me.
