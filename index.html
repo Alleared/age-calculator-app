@@ -14,6 +14,25 @@
 
 <body>
 
+  <header>
+
+    <div class="lang-div">
+      <img src="assets/images/portuguese.png" alt="Portuguese Language">
+    </div>
+
+    <div>
+      <label for="switch-lang" class="label-switch">
+        <input type="checkbox" id="switch-lang" class="input-switch" onclick="changeLangButton()">
+        <span class="slide"></span>
+      </label>
+    </div>
+
+    <div class="lang-div">
+      <img src="assets/images/english.png" alt="English Language">
+    </div>
+
+  </header>
+
 
   <main>
 
@@ -54,22 +73,25 @@
           </button>
         </div>
         <div class="date-result-div">
-          <div>
-            <p class="js-result-year"><span class="js-fResult-year">&dash;&dash;</span> years</p>
+          <div class="result-div">
+            <span class="js-fResult-year">&dash;&dash;</span> 
+            <p class="js-result-year">years</p>
           </div>
-          <div>
-            <p class="js-result-month"><span class="js-fResult-month">&dash;&dash;</span> months</p>
+          <div class="result-div">
+            <span class="js-fResult-month">&dash;&dash;</span>
+            <p class="js-result-month">months</p>
           </div>
-          <div>
-            <p class="js-result-day"><span class="js-fResult-day">&dash;&dash;</span> days</p>
+          <div class="result-div">
+            <span class="js-fResult-day">&dash;&dash;</span>
+            <p class="js-result-day">days</p>
           </div>
         </div>
       </div>
     </article> 
 
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Alleared</a>.
+      Challenge por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded por <a href="#">Alleared</a>.
     </div>
 
   </main>
