@@ -86,10 +86,6 @@ header {
   transform: translateX(-30px);
 }
 
-#portuguese {
-  display: none;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -186,6 +182,11 @@ article {
 
 }
 
+.result-div {
+  display: flex;
+  gap: 1rem;
+}
+
 .date-result-div {
   font: 800 4rem 'Poppins', sans-serif;
 }
@@ -231,3 +232,4 @@ article {
   }
 
 }
+
