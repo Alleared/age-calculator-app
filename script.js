@@ -138,6 +138,8 @@ function changeLangButton () {
     yearParagraph.innerText = 'anos';
     monthParagraph.innerText = 'meses';
     dayParagraph.innerText = 'dias';
+
+	document.title = 'Calculadora de Idade';
   } else {
     dayLabel.innerText = 'DAY';
     monthLabel.innerText = 'MONTH';
@@ -146,7 +148,8 @@ function changeLangButton () {
     yearParagraph.innerText = 'years';
     monthParagraph.innerText = 'months';
     dayParagraph.innerText = 'days';
-    
+
+	  document.title = 'Age Calculator';
   }
 
 }
